@@ -53,7 +53,7 @@
        
     }
         .conteudo-foto-flex img{
-            width: 400px;
+            width: 100%;
             height: auto;
         }
         .conteudo-foto-flex p{
