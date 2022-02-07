@@ -1,0 +1,71 @@
+
+.ferramenta{
+    width: 90%;
+    margin: auto;
+}
+/*Formulario de perguntas*/
+
+.container-texto h1{
+    margin: 5px 2px;
+}
+
+.container-texto p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.container-texto h2{
+    margin: 10px 2px;
+}
+
+    .form-perguntas{
+        background-color: #F2CAA7;
+        padding: 1.2em;
+        border-radius: 10px ;
+        margin: 5px;
+    }
+        .form-perguntas label{
+        display: block;
+        margin: 5px 0;
+    }
+
+#calc{
+    background-color:#D92B04 ;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px 15px ;
+    border-radius: 10px;
+    border-style: none;
+    margin: 0.5em;
+
+}
+
+#calc:hover{
+    background-color: #a8270a;
+    cursor: pointer;
+}
+
+
+table{
+    margin: 15px;
+    width: 90%;
+}
+
+#res{
+    width: 90%;
+    margin: auto;
+    background-color: #5197A6;
+    padding: 1.2em;
+    border-radius: 10px ;
+    margin: auto ;
+    margin-bottom: 10px;
+}
+
+    .res-container p{
+        display: inline-block;
+    }
+
+#restext{
+    font-weight: bold;
+    text-align: justify;
+}

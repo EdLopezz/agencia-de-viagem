@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento - América do Sul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="orcamento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu-navbar">
+                <li><a href="index.html">Locais</a></li>
+                <li><a href="">Passagem</a></li>
+                <li><a href="">Hotel</a></li>
+                <li><a href="">Pontos Turisticos</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-texto">
+            <h1>Orçamento</h1>
+            <p>Uma viage pode custar carissimo cara, além da <strong>passagem , hotel , comida , locomoção (que são os básicos ) </strong> muitas pessoas acabam se esquecendo de seguros para viagem, chips entre outros. Para isso nós desenvolvemos uma ferramenta para auxiliar você com seu controle financeiro .</p>
+            <h2>Orçamento da Viagem</h2>
+        </div>
+
+        <hr>
+        <div class="ferramenta">
+            
+            <form action="Inf-pessoas" class="form-perguntas">
+
+                <p>Qual o pais você vai visitar ?</p>
+                <select name="pais" id="pais" required>
+                    <option value="arg" >Argentina</option>
+                    <option value="chi" >Chile</option>
+                </select>
+                
+                <label for="pessoas">Quantas pessoas são ?</label> 
+                <input type="number" name="pes" id="pes" required>
+                
+                <label for="com">Quanto pretende gastar com comida ?</label>
+                <input type="number" name="com" id="com" required>
+                
+                <label for="pas">Quanto pretende gastar com passagem ?</label>
+                <input type="number" name="pas" id="pas" required>
+                
+                <label for="hot">Quanto pretende gastar com hotel ?</label><input type="number" name="hot" id="hot" required>
+                <p>Qantos dias ?</p>
+
+                <select name="dias" id="dias" > 
+                    <option value="1" id="d1">1 dia</option>
+                    <option value="2"  id="d2">2 dia</option>
+                    <option value="3" id="d3">3 dia</option>
+                    <option value="4" id="d4">4 dia</option>
+                    <option value="5" id="d5">5 dia</option>
+                </select>
+                
+            </form>
+            <table border="1px" >
+                <tr>
+                    <th colspan="2">Valores</th>
+                </tr>
+                <tr>
+                    <th>N° de pessoas</th>
+                    <th> Valor (diária)</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>4 a 6</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <th colspan="2">PACOTE LIMITE DE 6 PESSOAS</th>
+                </tr>
+            </table>
+
+
+            <input type="button" value=" Orçamento " id="calc" onclick="calc()" >
+        </div>
+
+        <div id="res">
+            <h1 id="lugar"> Pais</h1>
+            <hr>
+            <h2>Seus dados :</h2>
+
+            <div class="res-container">
+                <p class="resultado-texto"> N° Pessoas : </p><p id="qpessoas"> ... </p>
+            </div>
+            
+            <div class="res-container">
+                <p class="resultado-texto"> Noites :</p><p id="qdias"> ...</p>
+            </div>
+            
+            <div class="res-container">
+                <p class="resultado-texto"> Comida :</p><p id="qcom"> ...</p>
+            </div>
+            
+            <div class="res-container">
+                <p class="resultado-texto"> Passagem :</p><p id="qpass" >... </p>
+            </div>
+            
+            <div class="res-container">
+                <p class="resultado-texto">TOTAL :</p><P id="qtotal"> ... </P>
+            </div>
+            <hr>
+            <div id="restotal">
+                <p id="restext"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Educarlopzz &copy;</p>
+    </footer>
+
+    <script src="orcamento.js"></script>
+</body>
+</html>
