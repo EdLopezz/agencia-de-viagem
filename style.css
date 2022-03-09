@@ -9,6 +9,7 @@
 /*Menu barra de navegação*/
 .navbar{
     background-color:#4E84A6;
+    
 
 }
     .menu-navbar{
@@ -53,7 +54,7 @@
        
     }
         .conteudo-foto-flex img{
-            width: 100%;
+            width: 400px;
             height: auto;
         }
         .conteudo-foto-flex p{

@@ -1,0 +1,28 @@
+form{
+    background-color: #4E84A6;
+    margin: 5px 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 0px #2D6DA6  ;
+
+}
+
+#imagemResultado , #hoteisResultado{
+    width: 500px;
+    margin: 25px auto;
+    display: block;
+    border: 10px solid #4E84A6;
+    border-radius: 5px;
+    
+}
+#textoApresentacao , #hoteisApresentacao{
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+

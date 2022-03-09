@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Hoteis - America do Sul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hotel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu-navbar">
+                <li><a href="index.html">Locais</a></li>
+                <li><a href="">Passagem</a></li>
+                <li><a href="hotel.html">Hotel</a></li>
+                <li><a href="">Pontos Turisticos</a></li>
+                <li><a href="orcamento.html">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="conteudo-texto">
+            <h1>Hoteis por Região</h1>
+
+            <article class="conteudo-texto_formulario">
+                <form action="">
+                    <select name="pais" id="pais" required>
+                        <option value="vazio"></option>
+                        <option value="arg" >Argentina</option>
+                        <option value="chi" >Chile</option>
+                    </select>
+                    <input type="button" value="Pesquisar" id="verHotel">
+                    <select name="lugares" id="lugaresPais"  >
+
+                    </select>
+                    <input type="button" value="🔎" onclick="valores()">
+                </form>
+                    <div id="lugaresPaisResultado">
+                        <img src="" id="imagemResultado">
+                        <p id="textoApresentacao"></p>
+
+                        <img src="" alt="" id="hoteisResultado">
+                        <p id="hoteisApresentacao"></p>
+                    </div>
+                    
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Educarlopzz &copy;</p>
+    </footer>
+
+    <script src="hotel.js"></script>
+</body>
+</html>
