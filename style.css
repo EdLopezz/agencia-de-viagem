@@ -69,13 +69,59 @@ footer{
     line-height: 100px;
 }
 
-@media (max-width:400px){
+/*Menu  mobile*/
+
+#mobileMenu{
+    display: none;
+}
+
+@media (max-width:600px){
+
     .navbar{
         display: flex;
-        flex-wrap: wrap;
+        justify-content: right;
+        align-items: center;
+        height: 50px;
+    }
+    #mobileMenu{
+        display: block;
+        position: relative;
+        width: 60px;
+        height: 50px;
+        background-color: #2D6DA6;
+        border: 1px solid #122632 ;
+        color: #F2F2F2;
+        margin: 0 10px;
+       
+    }
+    
+    .menu-navbar{
+        display:none;
+    }
+   
+    #navbar.active  .menu-navbar{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: #3e6b86;
+        top: 50px;
+        height: 100%;
+        width: 100%;
+        transition: 0.6s;
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #navbar.active li{
+        border-bottom: 1px solid #F2F2F2;
     }
 
-    .menu-navbar{
-        flex-wrap: wrap;
+    #navbar.active li:hover{
+        background-color: black;
     }
+
+
+
+  
+
+   
 }
